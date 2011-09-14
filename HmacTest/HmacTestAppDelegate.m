@@ -7,6 +7,7 @@
 //
 
 #import "HmacTestAppDelegate.h"
+#import "NSString+HMAC.h"
 
 @implementation HmacTestAppDelegate
 
@@ -14,7 +15,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
