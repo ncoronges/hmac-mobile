@@ -1,0 +1,11 @@
+application: hmac-tests
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /message/(.*)
+  script: message.py/\1
+
+- url: /.*
+  script: not_found.py

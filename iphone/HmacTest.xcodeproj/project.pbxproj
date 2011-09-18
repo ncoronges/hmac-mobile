@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B41D9C691420D44700970659 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C511420D44700970659 /* NSObject+SBJson.m */; };
+		B41D9C6A1420D44700970659 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C541420D44700970659 /* SBJsonParser.m */; };
+		B41D9C6B1420D44700970659 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C561420D44700970659 /* SBJsonStreamParser.m */; };
+		B41D9C6C1420D44700970659 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C581420D44700970659 /* SBJsonStreamParserAccumulator.m */; };
+		B41D9C6D1420D44700970659 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C5A1420D44700970659 /* SBJsonStreamParserAdapter.m */; };
+		B41D9C6E1420D44700970659 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C5C1420D44700970659 /* SBJsonStreamParserState.m */; };
+		B41D9C6F1420D44700970659 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C5E1420D44700970659 /* SBJsonStreamWriter.m */; };
+		B41D9C701420D44700970659 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C601420D44700970659 /* SBJsonStreamWriterAccumulator.m */; };
+		B41D9C711420D44700970659 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C621420D44700970659 /* SBJsonStreamWriterState.m */; };
+		B41D9C721420D44700970659 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C641420D44700970659 /* SBJsonTokeniser.m */; };
+		B41D9C731420D44700970659 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C661420D44700970659 /* SBJsonUTF8Stream.m */; };
+		B41D9C741420D44700970659 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = B41D9C681420D44700970659 /* SBJsonWriter.m */; };
+		B473D76C141FCFDA006B91EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D76B141FCFDA006B91EE /* UIKit.framework */; };
+		B473D76E141FCFDA006B91EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D76D141FCFDA006B91EE /* Foundation.framework */; };
+		B473D770141FCFDA006B91EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D76F141FCFDA006B91EE /* CoreGraphics.framework */; };
+		B473D776141FCFDA006B91EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B473D774141FCFDA006B91EE /* InfoPlist.strings */; };
+		B473D778141FCFDA006B91EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B473D777141FCFDA006B91EE /* main.m */; };
+		B473D77C141FCFDA006B91EE /* HmacTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B473D77B141FCFDA006B91EE /* HmacTestAppDelegate.m */; };
+		B473D77F141FCFDA006B91EE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B473D77D141FCFDA006B91EE /* MainWindow.xib */; };
+		B473D787141FCFDA006B91EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D786141FCFDA006B91EE /* SenTestingKit.framework */; };
+		B473D788141FCFDA006B91EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D76B141FCFDA006B91EE /* UIKit.framework */; };
+		B473D789141FCFDA006B91EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D76D141FCFDA006B91EE /* Foundation.framework */; };
+		B473D78A141FCFDA006B91EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B473D76F141FCFDA006B91EE /* CoreGraphics.framework */; };
+		B473D792141FCFDA006B91EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B473D790141FCFDA006B91EE /* InfoPlist.strings */; };
+		B473D794141FCFDA006B91EE /* HmacTestTests.h in Resources */ = {isa = PBXBuildFile; fileRef = B473D793141FCFDA006B91EE /* HmacTestTests.h */; };
+		B473D796141FCFDA006B91EE /* HmacTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B473D795141FCFDA006B91EE /* HmacTestTests.m */; };
+		B473D7A1141FD019006B91EE /* NSString+HMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = B473D7A0141FD019006B91EE /* NSString+HMAC.m */; };
+		B473D7B0141FD85C006B91EE /* MessageHasher.m in Sources */ = {isa = PBXBuildFile; fileRef = B473D7AF141FD85C006B91EE /* MessageHasher.m */; };
+		B473D7B31420B67B006B91EE /* WebServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B473D7B21420B67B006B91EE /* WebServiceDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B473D78B141FCFDA006B91EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B473D75E141FCFDA006B91EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B473D766141FCFDA006B91EE;
+			remoteInfo = HmacTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B41D9C501420D44700970659 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		B41D9C511420D44700970659 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		B41D9C521420D44700970659 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		B41D9C531420D44700970659 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		B41D9C541420D44700970659 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		B41D9C551420D44700970659 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		B41D9C561420D44700970659 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		B41D9C571420D44700970659 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		B41D9C581420D44700970659 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		B41D9C591420D44700970659 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		B41D9C5A1420D44700970659 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		B41D9C5B1420D44700970659 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		B41D9C5C1420D44700970659 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		B41D9C5D1420D44700970659 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		B41D9C5E1420D44700970659 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		B41D9C5F1420D44700970659 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		B41D9C601420D44700970659 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		B41D9C611420D44700970659 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		B41D9C621420D44700970659 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		B41D9C631420D44700970659 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		B41D9C641420D44700970659 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		B41D9C651420D44700970659 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		B41D9C661420D44700970659 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		B41D9C671420D44700970659 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		B41D9C681420D44700970659 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		B473D767141FCFDA006B91EE /* HmacTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HmacTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B473D76B141FCFDA006B91EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B473D76D141FCFDA006B91EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B473D76F141FCFDA006B91EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B473D773141FCFDA006B91EE /* HmacTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HmacTest-Info.plist"; sourceTree = "<group>"; };
+		B473D775141FCFDA006B91EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B473D777141FCFDA006B91EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B473D779141FCFDA006B91EE /* HmacTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HmacTest-Prefix.pch"; sourceTree = "<group>"; };
+		B473D77A141FCFDA006B91EE /* HmacTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HmacTestAppDelegate.h; sourceTree = "<group>"; };
+		B473D77B141FCFDA006B91EE /* HmacTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HmacTestAppDelegate.m; sourceTree = "<group>"; };
+		B473D77E141FCFDA006B91EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		B473D785141FCFDA006B91EE /* HmacTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HmacTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B473D786141FCFDA006B91EE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B473D78F141FCFDA006B91EE /* HmacTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HmacTestTests-Info.plist"; sourceTree = "<group>"; };
+		B473D791141FCFDA006B91EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B473D793141FCFDA006B91EE /* HmacTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HmacTestTests.h; sourceTree = "<group>"; };
+		B473D795141FCFDA006B91EE /* HmacTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HmacTestTests.m; sourceTree = "<group>"; };
+		B473D79F141FD019006B91EE /* NSString+HMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HMAC.h"; sourceTree = "<group>"; };
+		B473D7A0141FD019006B91EE /* NSString+HMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HMAC.m"; sourceTree = "<group>"; };
+		B473D7AE141FD85C006B91EE /* MessageHasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageHasher.h; sourceTree = "<group>"; };
+		B473D7AF141FD85C006B91EE /* MessageHasher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageHasher.m; sourceTree = "<group>"; };
+		B473D7B11420B67A006B91EE /* WebServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceDelegate.h; sourceTree = "<group>"; };
+		B473D7B21420B67B006B91EE /* WebServiceDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B473D764141FCFDA006B91EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D76C141FCFDA006B91EE /* UIKit.framework in Frameworks */,
+				B473D76E141FCFDA006B91EE /* Foundation.framework in Frameworks */,
+				B473D770141FCFDA006B91EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B473D781141FCFDA006B91EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D787141FCFDA006B91EE /* SenTestingKit.framework in Frameworks */,
+				B473D788141FCFDA006B91EE /* UIKit.framework in Frameworks */,
+				B473D789141FCFDA006B91EE /* Foundation.framework in Frameworks */,
+				B473D78A141FCFDA006B91EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B41D9C4F1420D3E400970659 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				B41D9C501420D44700970659 /* NSObject+SBJson.h */,
+				B41D9C511420D44700970659 /* NSObject+SBJson.m */,
+				B41D9C521420D44700970659 /* SBJson.h */,
+				B41D9C531420D44700970659 /* SBJsonParser.h */,
+				B41D9C541420D44700970659 /* SBJsonParser.m */,
+				B41D9C551420D44700970659 /* SBJsonStreamParser.h */,
+				B41D9C561420D44700970659 /* SBJsonStreamParser.m */,
+				B41D9C571420D44700970659 /* SBJsonStreamParserAccumulator.h */,
+				B41D9C581420D44700970659 /* SBJsonStreamParserAccumulator.m */,
+				B41D9C591420D44700970659 /* SBJsonStreamParserAdapter.h */,
+				B41D9C5A1420D44700970659 /* SBJsonStreamParserAdapter.m */,
+				B41D9C5B1420D44700970659 /* SBJsonStreamParserState.h */,
+				B41D9C5C1420D44700970659 /* SBJsonStreamParserState.m */,
+				B41D9C5D1420D44700970659 /* SBJsonStreamWriter.h */,
+				B41D9C5E1420D44700970659 /* SBJsonStreamWriter.m */,
+				B41D9C5F1420D44700970659 /* SBJsonStreamWriterAccumulator.h */,
+				B41D9C601420D44700970659 /* SBJsonStreamWriterAccumulator.m */,
+				B41D9C611420D44700970659 /* SBJsonStreamWriterState.h */,
+				B41D9C621420D44700970659 /* SBJsonStreamWriterState.m */,
+				B41D9C631420D44700970659 /* SBJsonTokeniser.h */,
+				B41D9C641420D44700970659 /* SBJsonTokeniser.m */,
+				B41D9C651420D44700970659 /* SBJsonUTF8Stream.h */,
+				B41D9C661420D44700970659 /* SBJsonUTF8Stream.m */,
+				B41D9C671420D44700970659 /* SBJsonWriter.h */,
+				B41D9C681420D44700970659 /* SBJsonWriter.m */,
+			);
+			name = SBJson;
+			sourceTree = "<group>";
+		};
+		B473D75C141FCFDA006B91EE = {
+			isa = PBXGroup;
+			children = (
+				B41D9C4F1420D3E400970659 /* SBJson */,
+				B473D771141FCFDA006B91EE /* HmacTest */,
+				B473D78D141FCFDA006B91EE /* HmacTestTests */,
+				B473D76A141FCFDA006B91EE /* Frameworks */,
+				B473D768141FCFDA006B91EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B473D768141FCFDA006B91EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B473D767141FCFDA006B91EE /* HmacTest.app */,
+				B473D785141FCFDA006B91EE /* HmacTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B473D76A141FCFDA006B91EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B473D76B141FCFDA006B91EE /* UIKit.framework */,
+				B473D76D141FCFDA006B91EE /* Foundation.framework */,
+				B473D76F141FCFDA006B91EE /* CoreGraphics.framework */,
+				B473D786141FCFDA006B91EE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B473D771141FCFDA006B91EE /* HmacTest */ = {
+			isa = PBXGroup;
+			children = (
+				B473D77A141FCFDA006B91EE /* HmacTestAppDelegate.h */,
+				B473D77B141FCFDA006B91EE /* HmacTestAppDelegate.m */,
+				B473D77D141FCFDA006B91EE /* MainWindow.xib */,
+				B473D772141FCFDA006B91EE /* Supporting Files */,
+				B473D79F141FD019006B91EE /* NSString+HMAC.h */,
+				B473D7A0141FD019006B91EE /* NSString+HMAC.m */,
+				B473D7AE141FD85C006B91EE /* MessageHasher.h */,
+				B473D7AF141FD85C006B91EE /* MessageHasher.m */,
+				B473D7B11420B67A006B91EE /* WebServiceDelegate.h */,
+				B473D7B21420B67B006B91EE /* WebServiceDelegate.m */,
+			);
+			path = HmacTest;
+			sourceTree = "<group>";
+		};
+		B473D772141FCFDA006B91EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B473D773141FCFDA006B91EE /* HmacTest-Info.plist */,
+				B473D774141FCFDA006B91EE /* InfoPlist.strings */,
+				B473D777141FCFDA006B91EE /* main.m */,
+				B473D779141FCFDA006B91EE /* HmacTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B473D78D141FCFDA006B91EE /* HmacTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				B473D793141FCFDA006B91EE /* HmacTestTests.h */,
+				B473D795141FCFDA006B91EE /* HmacTestTests.m */,
+				B473D78E141FCFDA006B91EE /* Supporting Files */,
+			);
+			path = HmacTestTests;
+			sourceTree = "<group>";
+		};
+		B473D78E141FCFDA006B91EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B473D78F141FCFDA006B91EE /* HmacTestTests-Info.plist */,
+				B473D790141FCFDA006B91EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B473D766141FCFDA006B91EE /* HmacTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B473D799141FCFDA006B91EE /* Build configuration list for PBXNativeTarget "HmacTest" */;
+			buildPhases = (
+				B473D763141FCFDA006B91EE /* Sources */,
+				B473D764141FCFDA006B91EE /* Frameworks */,
+				B473D765141FCFDA006B91EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HmacTest;
+			productName = HmacTest;
+			productReference = B473D767141FCFDA006B91EE /* HmacTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B473D784141FCFDA006B91EE /* HmacTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B473D79C141FCFDA006B91EE /* Build configuration list for PBXNativeTarget "HmacTestTests" */;
+			buildPhases = (
+				B473D780141FCFDA006B91EE /* Sources */,
+				B473D781141FCFDA006B91EE /* Frameworks */,
+				B473D782141FCFDA006B91EE /* Resources */,
+				B473D783141FCFDA006B91EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B473D78C141FCFDA006B91EE /* PBXTargetDependency */,
+			);
+			name = HmacTestTests;
+			productName = HmacTestTests;
+			productReference = B473D785141FCFDA006B91EE /* HmacTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B473D75E141FCFDA006B91EE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = B473D761141FCFDA006B91EE /* Build configuration list for PBXProject "HmacTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B473D75C141FCFDA006B91EE;
+			productRefGroup = B473D768141FCFDA006B91EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B473D766141FCFDA006B91EE /* HmacTest */,
+				B473D784141FCFDA006B91EE /* HmacTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B473D765141FCFDA006B91EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D776141FCFDA006B91EE /* InfoPlist.strings in Resources */,
+				B473D77F141FCFDA006B91EE /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B473D782141FCFDA006B91EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D792141FCFDA006B91EE /* InfoPlist.strings in Resources */,
+				B473D794141FCFDA006B91EE /* HmacTestTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B473D783141FCFDA006B91EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B473D763141FCFDA006B91EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D778141FCFDA006B91EE /* main.m in Sources */,
+				B473D77C141FCFDA006B91EE /* HmacTestAppDelegate.m in Sources */,
+				B473D7A1141FD019006B91EE /* NSString+HMAC.m in Sources */,
+				B473D7B0141FD85C006B91EE /* MessageHasher.m in Sources */,
+				B473D7B31420B67B006B91EE /* WebServiceDelegate.m in Sources */,
+				B41D9C691420D44700970659 /* NSObject+SBJson.m in Sources */,
+				B41D9C6A1420D44700970659 /* SBJsonParser.m in Sources */,
+				B41D9C6B1420D44700970659 /* SBJsonStreamParser.m in Sources */,
+				B41D9C6C1420D44700970659 /* SBJsonStreamParserAccumulator.m in Sources */,
+				B41D9C6D1420D44700970659 /* SBJsonStreamParserAdapter.m in Sources */,
+				B41D9C6E1420D44700970659 /* SBJsonStreamParserState.m in Sources */,
+				B41D9C6F1420D44700970659 /* SBJsonStreamWriter.m in Sources */,
+				B41D9C701420D44700970659 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				B41D9C711420D44700970659 /* SBJsonStreamWriterState.m in Sources */,
+				B41D9C721420D44700970659 /* SBJsonTokeniser.m in Sources */,
+				B41D9C731420D44700970659 /* SBJsonUTF8Stream.m in Sources */,
+				B41D9C741420D44700970659 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B473D780141FCFDA006B91EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B473D796141FCFDA006B91EE /* HmacTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B473D78C141FCFDA006B91EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B473D766141FCFDA006B91EE /* HmacTest */;
+			targetProxy = B473D78B141FCFDA006B91EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B473D774141FCFDA006B91EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B473D775141FCFDA006B91EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B473D77D141FCFDA006B91EE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B473D77E141FCFDA006B91EE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		B473D790141FCFDA006B91EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B473D791141FCFDA006B91EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B473D797141FCFDA006B91EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B473D798141FCFDA006B91EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B473D79A141FCFDA006B91EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HmacTest/HmacTest-Prefix.pch";
+				INFOPLIST_FILE = "HmacTest/HmacTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B473D79B141FCFDA006B91EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HmacTest/HmacTest-Prefix.pch";
+				INFOPLIST_FILE = "HmacTest/HmacTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B473D79D141FCFDA006B91EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HmacTest.app/HmacTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HmacTest/HmacTest-Prefix.pch";
+				INFOPLIST_FILE = "HmacTestTests/HmacTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B473D79E141FCFDA006B91EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HmacTest.app/HmacTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HmacTest/HmacTest-Prefix.pch";
+				INFOPLIST_FILE = "HmacTestTests/HmacTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B473D761141FCFDA006B91EE /* Build configuration list for PBXProject "HmacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B473D797141FCFDA006B91EE /* Debug */,
+				B473D798141FCFDA006B91EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B473D799141FCFDA006B91EE /* Build configuration list for PBXNativeTarget "HmacTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B473D79A141FCFDA006B91EE /* Debug */,
+				B473D79B141FCFDA006B91EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B473D79C141FCFDA006B91EE /* Build configuration list for PBXNativeTarget "HmacTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B473D79D141FCFDA006B91EE /* Debug */,
+				B473D79E141FCFDA006B91EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B473D75E141FCFDA006B91EE /* Project object */;
+}
