@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface HmacTestAppDelegate : NSObject <UIApplicationDelegate>
-
+{
+    IBOutlet UILabel *hashLabel;
+    IBOutlet UITextField *hashMessage;
+    IBOutlet UITextView *hashOutput;
+    IBOutlet UIButton *hashButton;
+    NSString *key;
+}
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+- (IBAction)hashMessage:(id)sender;
 
 @end

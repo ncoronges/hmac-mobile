@@ -8,10 +8,29 @@
 
 #import "HmacTestAppDelegate.h"
 #import "NSString+HMAC.h"
+#import "MessageHasher.h"
 
 @implementation HmacTestAppDelegate
 
 @synthesize window = _window;
+
+- (id)init 
+{
+    [super init];
+    if(self) {
+        key = @"key";
+    }
+    return self;
+}
+
+
+- (IBAction)hashMessage:(id)sender 
+{
+    NSString *userText = [hashMessage text];
+    NSString *generatedHash = [MessageHasher hashMessage:userText withKey:key];
+    [hashMessage resignFirstResponder];
+    [hashOutput setText: [NSString stringWithFormat:@"Generated hash: %@ with key: %@", generatedHash, key]]; 
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
